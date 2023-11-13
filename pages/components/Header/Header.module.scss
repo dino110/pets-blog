@@ -1,0 +1,18 @@
+@use "../../../styles/global" as *;
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  height: 418px;
+  position: relative;
+
+  @include mobile {
+    height: 200px;
+    width: 100%;
+  }
+
+  @include tablet {
+    height: 320px;
+    width: 100%;
+  }
+}

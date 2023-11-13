@@ -1,0 +1,88 @@
+@use "../../../styles/global" as *;
+
+.footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding-top: 77px;
+  padding-bottom: 80px;
+
+  @include mobile {
+    padding-top: 42px;
+    padding-bottom: 36px;
+  }
+}
+
+.footerContext {
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 345px;
+  }
+}
+
+.footerTabs {
+  @include flexRow;
+  align-items: flex-start;
+  padding-bottom: 30px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.column {
+  @include flexColumn;
+  gap: 0px;
+  text-align: center;
+  width: 33.3%;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0.08px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.columnTitle {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.columnLink {
+  margin: 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.columnLink:hover {
+  transform: scale(1.1);
+  color: rgb(240, 235, 235);
+}
+
+.copyright {
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.071px;
+
+  @include tablet {
+    width: 85%;
+  }
+}

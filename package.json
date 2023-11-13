@@ -5,16 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 4000",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.0.1",
     "react": "^18",
+    "react-cookie-consent": "^9.0.0",
     "react-dom": "^18",
-    "next": "14.0.1"
+    "react-hook-form": "^7.48.2",
+    "react-modal": "^3.16.1",
+    "react-responsive-carousel": "^3.2.23",
+    "sharp": "^0.32.6",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "eslint-config-next": "14.0.1",
+    "sass": "^1.69.5"
   }
 }

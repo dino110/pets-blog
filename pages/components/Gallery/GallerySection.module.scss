@@ -1,0 +1,32 @@
+@use "../../../styles/global" as *;
+
+.galleryContainer {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  padding: 107px 20px 100px 20px;
+
+  @include mobile {
+    padding-top: 75px;
+    width: 345px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 75px;
+  }
+}
+
+.galleryImage {
+  width: 255px;
+  height: 255px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 157px;
+    height: 157px;
+  }
+}
